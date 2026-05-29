@@ -52,5 +52,5 @@ jobs:
         if: ${{ inputs.build && inputs.publish }}
 
       - name: Publish to NPM
-        run: vp pm -r ${{ inputs.stage && 'stage ' || '' }}publish --access public --no-git-checks ${{ inputs['tag'] && format('--tag {0}', inputs['tag']) || '' }}
+        run: vp pm ${{ inputs.stage && 'stage ' || '' }}publish --access public --no-git-checks ${{ inputs['tag'] && format('--tag {0}', inputs['tag']) || '' }} -r
         if: ${{ inputs.publish || inputs.stage }}
