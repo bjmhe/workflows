@@ -1,4 +1,4 @@
-name: autofix.ci vite plus
+name: autofix.ci
 
 on:
   push:
