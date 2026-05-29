@@ -31,7 +31,6 @@ jobs:
       - name: Setup Vite Plus
         uses: sxzz/workflows/setup-vp@main
         with:
-          no-frozen-lockfile: true
           persist-credentials: ${{ inputs.persist-credentials }}
 
       - name: Fix
